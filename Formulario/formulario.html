@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+    <head>
+        <meta charset="UTF-8">
+            <title>Formulario</title>
+        <link rel="icon" href="../Imagenes/icon_tr.png" type="/image/png" sizes="14x14">
+    </head>
+    <body>
+        <h1>Formulario de registro</h1>
+        <form action="/server" method="get">
+        <h2>Registro</h2>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <lable for="Nombre">Nombre</lable>
+            <input id="Nombre" name="Nombre" type="text" placeholder="Escribe tu nombre" maxlength="15" required autofocus/><br/>
+            <lable for="Primer_Apellido">Primer pellido</lable>
+            <input id="Primer_Apellido" name="1ªApellido" type="text" placeholder="Escribe tu primer apellido" maxlength="15" required/><br/>
+            <lable for="Segundo_Apellido">Segundo pellido</lable>
+            <input id="Segundo_Apellido" name="2ºApellido" type="text" placeholder="Escribe tu primer apellido" maxlength="15"required /><br/>
+            <lable for="Fecha_de_nacimiento">Fecha de nacimiento</lable>
+            <input id="Fecha_de_nacimiento" name="Fecha_de_nacimiento" type="date" required /><br/>
+            <lable for="Sexo">Sexo</lable>
+            <select id="Sexo" name="sexo">
+                <option value="#">Elija una opción</option>
+                <option value="Male">Masculino</option>
+                <option value="Female">Femenino</option>
+                <option value="Other">Indeterminado</option>
+            </select><br/>
+            <lable for="email">E-mail</lable>
+            <input id="email" name="email" type="email" placeholder="Escribe aqui tu email" required /><br/>
+            <lable for="Telefono">Ingrese su numero de teléfono</lable>
+            <input id="Telefono" name="Telefono" type="tel" pattern="[0-9]{9}" placeholder="999887766" required>
+            </fieldset>
+            <input type="submit" /><input type="reset" /><br/><br/>
+        </form>
+        <input type="button" onclick="location.href='../index.html'" value="Click para volver a la pagina principal">
+    </body>
